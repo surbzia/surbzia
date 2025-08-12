@@ -8,11 +8,13 @@ const experiences = reactive([
         designation: "Senior PHP/Laravel Developer",
         duration: "July 2025 - Present",
         isPromotion: true,
+        isCurrent: true,
       },
       {
         designation: "PHP/Laravel Developer",
         duration: "June 2024 - July 2025",
         isPromotion: false,
+        isCurrent: false,
       },
     ],
     responsibilities: [
@@ -30,6 +32,7 @@ const experiences = reactive([
         designation: "PHP/Laravel Developer",
         duration: "June 2022 - June 2024",
         isPromotion: false,
+        isCurrent: false,
       },
     ],
     responsibilities: [
@@ -47,6 +50,7 @@ const experiences = reactive([
         designation: "Web Exective (PHP/Laravel Developer)",
         duration: "January 2022 - June 2022",
         isPromotion: false,
+        isCurrent: false,
       },
     ],
     responsibilities: [
@@ -64,6 +68,7 @@ const experiences = reactive([
         designation: "Junior PHP/Laravel Developer",
         duration: "January 2021 - January 2022",
         isPromotion: false,
+        isCurrent: false,
       },
     ],
     responsibilities: [
@@ -163,7 +168,11 @@ const experiences = reactive([
                             </h5>
                           </div>
                           <span
-                            class="badge bg-light text-dark rounded-pill border"
+                            class="badge rounded-pill"
+                            :class="{
+                              'bg-success text-white': position.isCurrent,
+                              'bg-light text-dark border': !position.isCurrent,
+                            }"
                           >
                             {{ position.duration }}
                           </span>

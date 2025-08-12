@@ -19,12 +19,12 @@
 </template>
 
 <script setup>
-import Header from "./../components/Header.vue";
-import Sidebar from "./../components/Sidebar.vue";
+import Header from "../components/Header.vue";
+import Sidebar from "../components/Sidebar.vue";
 </script>
 <style>
-@import url("./../assets/css/core.css");
-@import url("./../assets/css/demo.css");
-@import url("./../assets/css/theme-default.css");
-@import url("./../assets/fonts/boxicons.css");
+@import "../public/assets/css/core.css";
+@import "../public/assets/css/demo.css";
+@import "../public/assets/css/theme-default.css";
+@import "../public/assets/fonts/boxicons.css";
 </style>

@@ -1,3 +1,27 @@
+<script setup>
+import { ref, watch } from "vue";
+import { useRoute } from "vue-router";
+
+const route = useRoute();
+const activeLink = ref("");
+
+// Set initial active link
+activeLink.value = route.path;
+
+// Watch for route changes
+watch(
+  () => route.path,
+  (newPath) => {
+    activeLink.value = newPath;
+  }
+);
+const toggleMenu = () => {
+  const layoutPage = document.querySelector(".layout-page");
+  const menu = document.getElementById("layout-menu");
+  menu.classList.toggle("layout-menu");
+  layoutPage.classList.toggle("d-none");
+};
+</script>
 <template>
   <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
     <div class="app-brand demo flex justify-content-around">
@@ -31,7 +55,9 @@
           <div class="mt-3 flex gap-2">
             <a
               href="https://pk.linkedin.com/in/itssaleembinzia"
-              data-toggle="tooltip" data-placement="top" title="https://pk.linkedin.com/in/itssaleembinzia"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="https://pk.linkedin.com/in/itssaleembinzia"
               target="_blank"
               class="text-blue-600 mx-2 hover:text-blue-800"
             >
@@ -40,14 +66,18 @@
 
             <a
               href="mailto:realsaleem.khi@gmail.com"
-               data-toggle="tooltip" data-placement="top" title="realsaleem.khi@gmail.com"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="realsaleem.khi@gmail.com"
               class="text-red-500 mx-2 hover:text-red-700"
             >
               <i class="bx bx-envelope text-2xl"></i>
             </a>
             <a
               href="tel:03110220891"
-              data-toggle="tooltip" data-placement="top" title="03110220891"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="03110220891"
               class="text-red-500 mx-2 hover:text-red-700"
             >
               <i class="bx bx-phone text-2xl"></i>
@@ -56,37 +86,40 @@
         </div>
       </li>
       <li class="menu-item m-0">
-        <NuxtLink class="ps-4 mb-2 menu py-3 bg-lightest" to="/"
-          >Introduction</NuxtLink
+        <NuxtLink
+          class="ps-4 mb-2 menu py-3 menu_btn bg-lightest"
+          :class="{ 'active': activeLink === '/' }"
+          to="/"
+          >Experiance</NuxtLink
         >
       </li>
       <li class="menu-item m-0">
-        <NuxtLink class="ps-4 mb-2 menu py-3 bg-lightest" to="/education"
+        <NuxtLink
+          class="ps-4 mb-2 menu py-3 menu_btn bg-lightest"
+          :class="{ 'active': activeLink === '/education' }"
+          to="/education"
           >Education</NuxtLink
         >
       </li>
       <li class="menu-item m-0">
-        <NuxtLink class="ps-4 mb-2 menu py-3 bg-lightest" to="/projects"
+        <NuxtLink
+          class="ps-4 mb-2 menu py-3 menu_btn bg-lightest"
+          :class="{ 'active': activeLink === '/projects' }"
+          to="/projects"
           >Projects</NuxtLink
         >
       </li>
       <li class="menu-item m-0">
-        <NuxtLink class="ps-4 mb-2 menu py-3 bg-lightest" to="/certification"
+        <NuxtLink
+          class="ps-4 mb-2 menu py-3 menu_btn bg-lightest"
+          :class="{ 'active': activeLink === '/certification' }"
+          to="/certification"
           >Certification
         </NuxtLink>
       </li>
     </ul>
   </aside>
 </template>
-
-<script setup>
-const toggleMenu = () => {
-  const layoutPage = document.querySelector(".layout-page");
-  const menu = document.getElementById("layout-menu");
-  menu.classList.toggle("layout-menu");
-  layoutPage.classList.toggle("d-none");
-};
-</script>
 
 <style scoped>
 .menu-sub {

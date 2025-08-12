@@ -483,6 +483,10 @@ button.list-group-item-primary.active {
     background-color: #b47405 !important;
         color: #e0e1ff;
 }
+.menu_btn.active {
+    background-color: #b47405 !important;
+    color: #e0e1ff;
+}
 
 .menu.bg-primary .menu-link,
 .menu.bg-primary .menu-horizontal-prev,
@@ -495,7 +499,7 @@ button.list-group-item-primary.active {
 .menu.bg-primary .menu-horizontal-prev:focus,
 .menu.bg-primary .menu-horizontal-next:hover,
 .menu.bg-primary .menu-horizontal-next:focus {
-    color: #fff;
+    color: #b47405;
 }
 
 .menu.bg-primary .menu-link.active,
@@ -644,7 +648,8 @@ a {
 }
 
 a:hover {
-    color: #787bff;
+    color: #b47405;
+        font-weight: 600;
 }
 
 .fill-primary {

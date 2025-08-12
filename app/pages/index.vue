@@ -2,6 +2,7 @@
 const experiences = reactive([
   {
     company: "The Apex Solutions",
+    company_website: "https://www.theapex-solutions.com/",
     positions: [
       {
         designation: "Senior PHP/Laravel Developer",
@@ -23,6 +24,7 @@ const experiences = reactive([
   },
   {
     company: "Inoviotech Pvt Ltd",
+    company_website: "https://www.inoviotech.com/",
     positions: [
       {
         designation: "PHP/Laravel Developer",
@@ -39,6 +41,7 @@ const experiences = reactive([
   },
   {
     company: "The Softcube",
+    company_website: "https://www.thesoftcube.com/",
     positions: [
       {
         designation: "Web Exective (PHP/Laravel Developer)",
@@ -55,6 +58,7 @@ const experiences = reactive([
   },
   {
     company: "The Squarehouse",
+    company_website: "https://nextaxe.com/",
     positions: [
       {
         designation: "Junior PHP/Laravel Developer",
@@ -128,10 +132,12 @@ const experiences = reactive([
               >
                 <div class="card border-0 shadow-sm mb-3">
                   <div class="card-header bg-white border-0 pb-0">
-                    <h4 class="text-primary mb-2">
-                      <i class="bi bi-building me-2"></i>
-                      {{ experience.company }}
-                    </h4>
+                    <a :href="experience.company_website">
+                      <h4 class="text-primary mb-2">
+                        <i class="bx bx-building me-2"></i>
+                        {{ experience.company }}
+                      </h4>
+                    </a>
                   </div>
                   <div class="card-body pt-0">
                     <div class="position-relative ps-3">

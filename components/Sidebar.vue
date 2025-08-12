@@ -30,33 +30,50 @@
           </h5>
           <div class="mt-3 flex gap-2">
             <a
-              href="https://linkedin.com"
+              href="https://pk.linkedin.com/in/itssaleembinzia"
+              data-toggle="tooltip" data-placement="top" title="https://pk.linkedin.com/in/itssaleembinzia"
               target="_blank"
               class="text-blue-600 mx-2 hover:text-blue-800"
             >
               <i class="bx bxl-linkedin text-2xl"></i>
             </a>
+
             <a
-              href="mailto:saleem@example.com"
+              href="mailto:realsaleem.khi@gmail.com"
+               data-toggle="tooltip" data-placement="top" title="realsaleem.khi@gmail.com"
               class="text-red-500 mx-2 hover:text-red-700"
             >
               <i class="bx bx-envelope text-2xl"></i>
             </a>
-            <!-- Add more social icons as needed -->
+            <a
+              href="tel:03110220891"
+              data-toggle="tooltip" data-placement="top" title="03110220891"
+              class="text-red-500 mx-2 hover:text-red-700"
+            >
+              <i class="bx bx-phone text-2xl"></i>
+            </a>
           </div>
         </div>
       </li>
       <li class="menu-item m-0">
-        <NuxtLink class="ps-4 mb-2 menu py-3 bg-lightest" to="/">Introduction</NuxtLink>
+        <NuxtLink class="ps-4 mb-2 menu py-3 bg-lightest" to="/"
+          >Introduction</NuxtLink
+        >
       </li>
       <li class="menu-item m-0">
-        <NuxtLink class="ps-4 mb-2 menu py-3 bg-lightest" to="/education">Education</NuxtLink>
+        <NuxtLink class="ps-4 mb-2 menu py-3 bg-lightest" to="/education"
+          >Education</NuxtLink
+        >
       </li>
       <li class="menu-item m-0">
-        <NuxtLink class="ps-4 mb-2 menu py-3 bg-lightest" to="/projects">Projects</NuxtLink>
+        <NuxtLink class="ps-4 mb-2 menu py-3 bg-lightest" to="/projects"
+          >Projects</NuxtLink
+        >
       </li>
       <li class="menu-item m-0">
-        <NuxtLink class="ps-4 mb-2 menu py-3 bg-lightest" to="/certification">Certification </NuxtLink>
+        <NuxtLink class="ps-4 mb-2 menu py-3 bg-lightest" to="/certification"
+          >Certification
+        </NuxtLink>
       </li>
     </ul>
   </aside>

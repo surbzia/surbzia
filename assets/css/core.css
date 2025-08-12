@@ -6609,7 +6609,7 @@ a.bg-lighter:focus {
 
 a.bg-lightest:hover,
 a.bg-lightest:focus {
-  background-color: rgba(67, 89, 113, 0.05) !important;
+  background-color: rgba(67, 89, 113, 0.05);
 }
 
 .text-muted[href]:hover,

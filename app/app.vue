@@ -1,0 +1,30 @@
+<template>
+  <div>
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container d-flex">
+        <Sidebar />
+        <div class="layout-page">
+          <Header />
+          <div class="content-wrapper">
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <NuxtPage />
+            </div>
+            <div class="content-backdrop fade"></div>
+          </div>
+        </div>
+      </div>
+      <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+  </div>
+</template>
+
+<script setup>
+import Header from "./../components/Header.vue";
+import Sidebar from "./../components/Sidebar.vue";
+</script>
+<style>
+@import url("./../assets/css/core.css");
+@import url("./../assets/css/demo.css");
+@import url("./../assets/css/theme-default.css");
+@import url("./../assets/fonts/boxicons.css");
+</style>

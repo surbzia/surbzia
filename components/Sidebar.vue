@@ -47,12 +47,16 @@
         </div>
       </li>
       <li class="menu-item m-0">
-        <NuxtLink class="ps-4 mb-2 menu py-3 bg-lightest" to="/">Home</NuxtLink>
+        <NuxtLink class="ps-4 mb-2 menu py-3 bg-lightest" to="/">Introduction</NuxtLink>
       </li>
       <li class="menu-item m-0">
-        <NuxtLink class="ps-4 mb-2 menu py-3 bg-lightest" to="/about"
-          >About</NuxtLink
-        >
+        <NuxtLink class="ps-4 mb-2 menu py-3 bg-lightest" to="/education">Education</NuxtLink>
+      </li>
+      <li class="menu-item m-0">
+        <NuxtLink class="ps-4 mb-2 menu py-3 bg-lightest" to="/projects">Projects</NuxtLink>
+      </li>
+      <li class="menu-item m-0">
+        <NuxtLink class="ps-4 mb-2 menu py-3 bg-lightest" to="/certification">Certification </NuxtLink>
       </li>
     </ul>
   </aside>
